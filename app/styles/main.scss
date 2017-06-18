@@ -48,7 +48,7 @@ body{
 		overflow-style: scrollbar;
 	}
 	@media screen and (max-width: 567px) {
-		overflow: hidden;
+		// overflow: hidden;
 	}
 	&:before{
 		position: absolute;
@@ -56,7 +56,7 @@ body{
 		background-color: #000;
 		opacity: .50;
 		height: 100%;
-		width: 45%;
+		width: 43%;
 		@media (max-width: $screen-xs-max) {
 			width: 50%;
 		}
@@ -72,9 +72,18 @@ body{
 		}
 	}
 	&__item{
+
 		@media (max-width: $screen-sm-max) {
-			width: 50%;
+			width: 64%;
+			
 		}
+		@media (max-width: $screen-xs-max) {
+			width: 50%;
+			
+		}
+		
+		
+
 	}
 	&__online{
 		max-width: 480px;
@@ -83,6 +92,7 @@ body{
 		top: 50%;
 		transform: translateY(-50%);
 		padding-right: 0 !important;
+
 		@media (max-width: $screen-md-max) {
 			padding-right: 50px !important;
 		}
@@ -123,11 +133,12 @@ body{
 						background-color: #ff0006;
 						width: 100%;
 						height: 3px;
-						top: 27px;
+						top: 18px;
 						@media (max-width: $screen-sm-max) {
 							top: 15px;
 							height: 2px;
 						}
+						
 					}
 				}
 				&:last-child{
@@ -140,22 +151,32 @@ body{
 			font-size: 30px;
 			font-family: 'Candarab';
 			color: #fff;
-			padding-right: 60px;
+			padding-right: 66px;
 			@media (max-width: $screen-sm-max) {
 				font-size: 15px;
-				padding-right: 20px;
+				padding-right: 45px;
 				margin-bottom: 0;
 				// padding-top: 40px;
 			}
+			@media screen and (min-width: 568px)  {
+				padding-top: 25px;
+			}
+			@media (max-width: $screen-xs-max) {
+				padding-right: 15px;
+			}
 		}
 		p{
-			font-size: 22px;
+			font-size: 21px;
 			color: #fff;
 			font-family: 'Candarab';
 			text-align: center;
 			padding-top: 20px;
 			@media (max-width: $screen-sm-max) {
 				font-size: 15px;
+				padding: 20px 50px 0;
+			}
+			@media (max-width: $screen-xs-max){
+				padding: 20px 0 0;
 			}
 		}
 		h4{
@@ -169,6 +190,11 @@ body{
 				display: block;
 				margin-top: 0;
 			}
+			@media screen and (min-width: 455px) and (max-width:480px)  {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+
 			span{
 				color: #ffea00;
 			}
@@ -176,11 +202,12 @@ body{
 				content: '';
 				position: absolute;
 				background-color: #c6c5c5;
-				height: 10px;
-				max-width: 380px;
-				width: 100%;
-				border-radius: 5px;
-				top: 60px;
+				height: 6px;
+				max-width: 336px;
+				width: 100%;				
+				top: 71px;
+				margin-left: 5px;
+
 				@media (max-width: $screen-sm-max) {
 					height: 3px;
 					max-width: 140px;
@@ -189,6 +216,10 @@ body{
 					left: 50%;
 					transform: translateX(-50%);
 				}
+				@media (max-width: $screen-xs-max){
+					margin-left: 0;
+				}
+
 				@media (max-width: $screen-xs-min) {
 					height: 3px;
 					max-width: 140px;
@@ -196,6 +227,9 @@ body{
 					top: 95px;
 					left: 50%;
 					transform: translateX(-50%);
+				}
+				@media screen and (min-width: 481px) and (max-width: 484px)  {
+					top: 90px;
 				}
 			}
 			&:after{
@@ -226,6 +260,9 @@ body{
 					left: 50%;
 					transform: translateX(-50%);
 				}
+				@media screen and (min-width: 481px) and (max-width: 484px)  {
+					top: 160px;
+				}
 			}
 		}
 		.forms{
@@ -240,6 +277,7 @@ body{
 				padding-bottom: 20px;
 				display: inline-block;
 				padding-left: 30px;
+
 			}
 			@media (max-width: $screen-xs-min) {
 				display: block;
